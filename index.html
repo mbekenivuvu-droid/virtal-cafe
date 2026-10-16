@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tiny Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cafe">
+    <!-- CONTROLS UI -->
+    <div class="controls">
+      <button id="btnTime">🌅 Time: Day</button>
+      <button id="btnRain">🌧️ Toggle Rain</button>
+    </div>
+
+    <!-- WINDOW & CLOUDS -->
+    <div class="window" id="window">
+      <div class="sky"></div>
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="cloud cloud-three"></div>
+      <div class="cloud cloud-four"></div>
+      <div class="window-pane-h"></div>
+      <div class="window-pane-v"></div>
+    </div>
+    
+    <!-- COUNTER & TITLE -->
+    <div class="counter">
+      <h1>The Tiny Café</h1>
+      <p>coffee, books & little moments</p>
+    </div>
+
+    <!-- TABLE & INTERACTIVE ITEMS -->
+    <div class="table">
+      <!-- COFFEE CUP & SAUCER -->
+      <div class="coffee-cup interactive" id="coffeeCup">
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
+        <div class="cup-body">
+          <div class="cup-rim"></div>
+          <div class="cup-liquid"></div>
+        </div>
+        <div class="cup-handle"></div>
+        <div class="saucer"></div>
+      </div>
+
+      <!-- FLICKERING CANDLE -->
+      <div class="candle interactive" id="candle">
+        <div class="flame" id="flame"></div>
+        <div class="wax"></div>
+      </div>
+
+      <!-- OPEN BOOK -->
+      <div class="book interactive" id="book">
+        <div class="book-cover"></div>
+        <div class="book-page page-left"></div>
+        <div class="book-page page-right"></div>
+        <div class="book-spine"></div>
+        <div class="bookmark"></div>
+      </div>
+    </div>
+
+     <!-- WALL SHELF WITH LETTER -->
+     <div class="shelf">
+       <div class="shelf-board"></div>
+       <div class="shelf-bracket bracket-left"></div>
+       <div class="shelf-bracket bracket-right"></div>
+  
+       <!-- ENVELOPE RESTING ON SHELF -->
+       <div class="notes-box interactive" id="notesBox">
+         <div class="envelope">
+           <div class="envelope-flap"></div>
+           <div class="envelope-pocket"></div>
+           <div class="wax-seal"></div>
+         </div>
+       </div>
+       </div>
+
+      <!-- POTTED PLANT ON THE FLOOR -->
+      <div class="plant-container interactive" id="plant">
+        <div class="pot">
+          <div class="pot-rim"></div>
+       </div>
+        <div class="stem"></div>
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="leaf leaf-3"></div>
+        <div class="leaf leaf-4"></div>
+        <div class="leaf leaf-5"></div>
+      </div>
+
+      <!-- CAFÉ CAT ON THE FLOOR -->
+      <div class="cat interactive" id="cat">
+        <div class="cat-body">
+          <div class="cat-head">
+            <div class="cat-ear ear-l"></div>
+            <div class="cat-ear ear-r"></div>
+            <div class="cat-eyes"></div>
+            <div class="cat-nose"></div>
+            <div class="cat-whiskers"></div>
+          </div>
+          <div class="cat-torso"></div>
+          <div class="cat-tail"></div>
+        </div>
+        <div class="cat-bubble" id="catBubble">Purr...</div>
+      </div>
+
+    <!-- POPUP DIALOGUE MODAL -->
+    <div class="modal hidden" id="modal">
+      <div class="modal-content">
+        <h3 id="modalTitle">Title</h3>
+        <p id="modalText">Message goes here...</p>
+
+        <!-- INPUT FOR LEAVING ANONYMOUS NOTES -->
+        <div id="noteInputContainer" class="hidden">
+          <textarea id="noteInput" placeholder="Write a gentle note for someone..."></textarea>
+          <button id="btnSubmitNote">Leave Note</button>
+        </div>
+
+        <button id="btnCloseModal">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
